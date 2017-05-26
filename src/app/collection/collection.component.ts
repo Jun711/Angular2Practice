@@ -14,7 +14,7 @@ export class CollectionComponent implements OnInit {
   	constructor(private collectableService: CollectableService) { }
 
   	onRemoveFromCOllection(item: Collectable) {
-  		this.collectableService.removeFromCollection();
+  		this.collectableService.removeFromCollection(item);
   	}
 
 	ngOnInit() {
